@@ -1,5 +1,6 @@
 package com.esir.sr.sweetsnake.registry;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -20,15 +21,20 @@ import com.esir.sr.sweetsnake.session.Player;
  * 
  */
 @Component
-public class PlayersRegistry
+public class PlayersRegistry implements Serializable
 {
 
     /**********************************************************************************************
      * [BLOCK] STATIC FIELDS
      **********************************************************************************************/
 
+    /**
+     * 
+     */
+    private static final long             serialVersionUID = -1611509528254160026L;
+
     /** The logger */
-    private static final org.slf4j.Logger log = LoggerFactory.getLogger(PlayersRegistry.class);
+    private static final org.slf4j.Logger log              = LoggerFactory.getLogger(PlayersRegistry.class);
 
     /**********************************************************************************************
      * [BLOCK] FIELDS

@@ -1,5 +1,6 @@
 package com.esir.sr.sweetsnake.session;
 
+import java.io.Serializable;
 import java.rmi.RemoteException;
 
 import org.slf4j.LoggerFactory;
@@ -13,15 +14,21 @@ import com.esir.sr.sweetsnake.enumeration.PlayerStatus;
  * @author Damien Jouanno
  * 
  */
-public class Player
+public class Player implements Serializable
 {
+
 
     /**********************************************************************************************
      * [BLOCK] STATIC FIELDS
      **********************************************************************************************/
 
+    /**
+     * 
+     */
+    private static final long             serialVersionUID = -2720339605523394835L;
+
     /** The logger */
-    private static final org.slf4j.Logger log = LoggerFactory.getLogger(Player.class);
+    private static final org.slf4j.Logger log              = LoggerFactory.getLogger(Player.class);
 
     /**********************************************************************************************
      * [BLOCK] FIELDS
